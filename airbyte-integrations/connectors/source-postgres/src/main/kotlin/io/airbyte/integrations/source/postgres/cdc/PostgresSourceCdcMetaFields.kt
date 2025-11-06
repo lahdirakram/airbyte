@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2024 Airbyte, Inc., all rights reserved.
- */
-
-package io.airbyte.integrations.source.postgres
+package io.airbyte.integrations.source.postgres.cdc
 
 import io.airbyte.cdk.discover.CdcIntegerMetaFieldType
 import io.airbyte.cdk.discover.CdcNumberMetaFieldType
@@ -20,5 +16,5 @@ enum class PostgresSourceCdcMetaFields(
     ;
 
     override val id: String
-        get() = MetaField.META_PREFIX + name.lowercase()
+        get() = MetaField.Companion.META_PREFIX + name.lowercase()
 }

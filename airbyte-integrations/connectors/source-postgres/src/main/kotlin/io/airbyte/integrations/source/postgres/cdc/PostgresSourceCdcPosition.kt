@@ -1,8 +1,4 @@
-/*
- * Copyright (c) 2025 Airbyte, Inc., all rights reserved.
- */
-
-package io.airbyte.integrations.source.postgres
+package io.airbyte.integrations.source.postgres.cdc
 
 data class PostgresSourceCdcPosition(val fileName: String, val position: Long) :
     Comparable<PostgresSourceCdcPosition> {

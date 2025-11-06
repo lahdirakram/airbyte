@@ -8,7 +8,7 @@ import io.airbyte.cdk.discover.JdbcAirbyteStreamFactory
 import io.airbyte.cdk.discover.MetaField
 import io.airbyte.cdk.output.sockets.NativeRecordPayload
 import io.airbyte.cdk.read.Stream
-import io.airbyte.integrations.source.postgres.PostgresSourceCdcMetaFields
+import io.airbyte.integrations.source.postgres.cdc.PostgresSourceCdcMetaFields
 import io.micronaut.context.annotation.Primary
 import jakarta.inject.Singleton
 import java.time.OffsetDateTime
