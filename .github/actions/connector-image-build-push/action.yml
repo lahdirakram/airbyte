@@ -171,7 +171,7 @@ runs:
 
         # Validate image registry input
         case "${{ inputs.registry }}" in
-          "docker.io/airbyte")
+          "docker.io/lahdirakram")
             # Supported registries
             ;;
           "ghcr.io/airbytehq")
