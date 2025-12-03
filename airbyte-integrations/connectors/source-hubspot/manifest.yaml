@@ -628,6 +628,7 @@ definitions:
         - companies
         - contacts
         - line_items
+        - leads
       cursor_filter_property_field: hs_lastmodifieddate
       required_scopes: crm.objects.deals.read
     schema_loader:
@@ -1819,6 +1820,7 @@ definitions:
       associations:
         - companies
         - contacts
+        - deals
       cursor_filter_property_field: hs_lastmodifieddate
       required_scopes: crm.objects.contacts.read, crm.objects.companies.read, crm.objects.leads.read
     schema_loader:
@@ -2773,6 +2775,15 @@ schemas:
             - string
       line_items:
         description: Details of line items associated with the deal
+        type:
+          - "null"
+          - array
+        items:
+          type:
+            - "null"
+            - string
+      leads:
+        description: Information about leads associated with the deal
         type:
           - "null"
           - array
@@ -4496,6 +4507,14 @@ schemas:
           - array
         items:
           description: Details of individual contacts
+          type: string
+      deals:
+        description: List of deals associated with the lead
+        type:
+          - "null"
+          - array
+        items:
+          description: Details of individual deals
           type: string
 
   marketing_emails:
