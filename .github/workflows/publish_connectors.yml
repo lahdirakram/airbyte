@@ -220,6 +220,7 @@ jobs:
           connector-name: ${{ matrix.connector }}
           release-type: ${{ needs.publish_options.outputs.release-type }}
           dry-run: "false"
+          registry: "docker.io/lahdirakram"
           docker-hub-username: ${{ secrets.DOCKER_HUB_USERNAME }}
           docker-hub-password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
